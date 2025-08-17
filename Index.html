@@ -1,39 +1,81 @@
 
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hip Hop Urban Style</title>
+<title>Hip Hop Urban & Rap Style</title>
 <style>
   body {
-    background-color: #222;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 600% 600%;
+    animation: gradientBG 15s ease infinite;
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Impact', 'Arial Black', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     text-align: center;
   }
+
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
   h1 {
     font-family: 'Impact', 'Staatliches', cursive;
     font-size: 50px;
     color: #ff0066;
     margin-top: 20px;
+    text-shadow: 2px 2px 4px #000;
   }
+
   p {
     font-size: 20px;
     margin: 20px;
   }
+
   .urban {
     font-family: 'Arial Black', sans-serif;
     font-size: 30px;
     color: #00ffff;
     text-shadow: 2px 2px 4px #000;
   }
+
+  .lyrics {
+    font-size: 24px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 700px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    margin-top: 30px;
+    font-style: italic;
+  }
 </style>
 </head>
 <body>
 <h1>Welcome to the Hip Hop Vibe</h1>
 <p class="urban">Stay Fresh, Stay Real</p>
+
+<div class="lyrics">
+  <p>"Lyric flows like a river, never gonna deliver less,<br>
+  Spittin' fire in the booth, fresh kicks, fresh dress.<br>
+  From the streets to the stage, everybody feeling the beat,<br>
+  Real talk, real game, this is lyrical heat."</p>
+</div>
+<div class="tagline">Stay Real, Stay Fly</div>
 </body>
 </html>
